@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "葫芦",
+  "classifications": [
+    "Furion",
+    "WebApi",
+    "Api"
+  ],
+  "name": "HuLu Api",
+  "identity": "HuLu.Template.Api",
+  "shortName": "huluapi",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "FurionApi",
+  "preferNameDirectory": true
+}
