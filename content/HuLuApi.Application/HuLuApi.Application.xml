@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HuLuApi.Application</name>
+    </assembly>
+    <members>
+        <member name="F:HuLuApi.Application.Config.MemoryCacheKey.DemoKey">
+            <summary>
+            demo缓存key
+            </summary>
+        </member>
+        <member name="F:HuLuApi.Application.Config.RedisCacheKey.DemoKey">
+            <summary>
+            demo缓存key
+            </summary>
+        </member>
+        <member name="T:HuLuApi.Application.Services.DemoService.DemoService">
+            <summary>
+            demo
+            </summary>
+        </member>
+        <member name="M:HuLuApi.Application.Services.DemoService.DemoService.GetDemoList(System.Int32,System.Int32)">
+            <summary>
+            获取demo的list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HuLuApi.Application.Services.DemoService.DemoService.AddDemo(HuLuApi.Application.Services.DemoService.Dtos.DemoInput)">
+            <summary>
+            添加demo
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HuLuApi.Application.Services.DemoService.Dtos.DemoInput">
+            <summary>
+            demo
+            </summary>
+        </member>
+        <member name="P:HuLuApi.Application.Services.DemoService.Dtos.DemoInput.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="T:HuLuApi.Application.Services.DemoService.Dtos.DemoOutput">
+            <summary>
+            demo
+            </summary>
+        </member>
+        <member name="P:HuLuApi.Application.Services.DemoService.Dtos.DemoOutput.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+    </members>
+</doc>
