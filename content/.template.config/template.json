@@ -4,7 +4,8 @@
   "classifications": [
     "Furion",
     "WebApi",
-    "Api"
+    "Api",
+    "FreeSql"
   ],
   "name": "HuLu Api",
   "identity": "HuLu.Template.Api",
