@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using System;
 using System.Collections.Generic;
 
 namespace HuLuApi.Web.Core
@@ -50,7 +51,7 @@ namespace HuLuApi.Web.Core
                 var connStrs = new Dictionary<string, KeyValuePair<DataType, string>>();
                 foreach(var section in App.Configuration.GetSection("Connection").GetChildren())
                 {
-                    connStrs.Add(section["DbKey"], KeyValuePair.Create(DataType.SqlServer, section["ConnStr"]));
+                    connStrs.Add(section["DbKey"], KeyValuePair.Create(Enum.Parse<DataType>(section["DbType"]), section["ConnStr"]));
                 }
 
                 services.AddFreeSql(connStrs,
