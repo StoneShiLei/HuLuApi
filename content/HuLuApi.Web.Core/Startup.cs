@@ -19,8 +19,8 @@ namespace HuLuApi.Web.Core
         public void ConfigureServices(IServiceCollection services)
         {
             //Jwt授权实现
-            services.AddJwt<JwtHandler>();
-
+            services.AddJwt<JwtHandler>(); //默认不需要授权
+            //services.AddJwt<JwtHandler>(enableGlobalAuthorize: true); // 开启全局授权
             //跨域
             services.AddCorsAccessor();
 
